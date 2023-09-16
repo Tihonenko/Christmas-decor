@@ -1,0 +1,7 @@
+.title__basket {
+	@apply mb-5 text-center text-lg font-medium;
+}
+
+.basket__card {
+	@apply flex w-full gap-5 rounded-btn border border-lightblack bg-lightwhite py-3 px-3 md:w-2/3 md:basis-full;
+}

@@ -1,0 +1,5 @@
+.SubmitBtn {
+	@apply max-h-[55px] w-full max-w-[500px] border border-lightwhite bg-lightblack px-5 py-2 text-center text-base text-lightwhite
+	hover:border-lightblack
+    hover:bg-lightwhite hover:text-lightblack disabled:bg-lightblack/50;
+}

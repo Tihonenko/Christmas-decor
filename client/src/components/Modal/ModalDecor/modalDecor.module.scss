@@ -1,0 +1,80 @@
+.modal_window {
+	@apply pointer-events-none fixed top-0 left-0 z-20 flex min-h-[100vh] min-w-[100vw] items-center justify-center bg-lightblack/40 opacity-0;
+}
+
+.modal_non_active {
+	@apply opacity-0 transition-opacity delay;
+}
+.modal_active {
+	@apply pointer-events-auto opacity-100 transition-opacity delay;
+}
+
+.main {
+	@apply min-h-[100px] min-w-[500px] rounded bg-lightwhite p-10;
+
+	// &_active {
+	// 	@apply translate-y-0 opacity-100 transition-all delay;
+	// }
+
+	// &_non_active {
+	// 	@apply transition-all delay;
+	// }
+}
+
+.main_active {
+	@apply translate-y-0 opacity-100 transition-all delay;
+}
+
+.main_non_active {
+	@apply translate-y-24 opacity-0 transition-all delay;
+}
+
+.title {
+	@apply mb-3 text-base font-semibold;
+}
+
+.drop_menu {
+	&_close {
+		@apply rounded-t-btn bg-lightblack text-lightwhite transition-all delay-150;
+	}
+
+	&_open {
+		@apply z-10 rounded-btn transition-all delay;
+	}
+
+	&_list {
+		@apply absolute flex w-[146px] flex-col gap-1 rounded-b-btn bg-lightblack pt-1 text-center text-lightwhite;
+
+		&_open {
+			@apply z-10  -translate-y-1 opacity-100 transition-drop delay;
+		}
+
+		&_close {
+			@apply -z-20 -translate-y-5 opacity-0 transition-drop delay;
+		}
+	}
+}
+
+.file {
+	@apply w-full cursor-pointer rounded-btn bg-lightwhite py-[4px] px-[26px]  text-center text-lightblack;
+
+	&:hover {
+		@apply bg-lightblack text-lightwhite;
+	}
+}
+
+.submit_btn {
+	@apply rounded-btn text-center transition-transform delay;
+
+	&:hover {
+		@apply -translate-y-1;
+	}
+}
+
+.clear_btn {
+	@apply rounded-btn bg-lightred py-[4px] px-[26px] text-lightwhite transition-all delay hover:-translate-y-1;
+}
+
+.image_label {
+	@apply py-2 text-center hover:bg-lightblack hover:text-lightwhite;
+}

@@ -1,0 +1,7 @@
+.btn {
+	@apply inline-block cursor-pointer border border-lightblack py-[4px] px-[43px];
+
+	&:hover {
+		@apply bg-lightblack text-lightwhite;
+	}
+}

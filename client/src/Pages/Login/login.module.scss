@@ -1,0 +1,19 @@
+.content {
+	@apply flex flex-col border-t border-lightblack;
+
+	&_title {
+		@apply font-Sofia text-4xl font-bold md:text-6xl;
+	}
+
+	&_sub_title {
+		@apply font-Sofia text-sm md:text-base;
+	}
+}
+
+.login_form {
+	@apply w-full md:pr-6;
+
+	&_title {
+		@apply flex w-full items-baseline border-b border-lightblack;
+	}
+}

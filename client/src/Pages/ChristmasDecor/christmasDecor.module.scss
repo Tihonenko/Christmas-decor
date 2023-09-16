@@ -1,0 +1,49 @@
+.aside_list {
+	@apply my-2 flex basis-1/5 flex-col overflow-hidden md:flex-row;
+}
+
+.page {
+	@apply mt-10 flex flex-1 flex-col gap-10 text-lightblack lg:flex-row;
+
+	& > div {
+		@apply basis-2/3;
+	}
+}
+
+.page_title {
+	@apply font-Felidae text-lg smd:text-8xl md:text-9xl sxl:text-big;
+}
+
+.filter_btn {
+	@apply max-w-[350px] border-b border-lightblack pl-2;
+}
+
+.filter_btn:hover {
+	background-color: aquamarine;
+	font-size: 24px;
+}
+
+.page_content {
+	@apply flex flex-col text-left;
+
+	& > h2 {
+		@apply mb-10 border-b border-lightblack pb-5 font-Felidae text-4xl text-lightred;
+	}
+
+	& > h4 {
+		@apply mb-[10px] text-lg font-medium;
+	}
+}
+
+.description_text {
+	@apply mb-10 text-sm md:text-2xl;
+}
+
+.footer_item {
+	@apply flex justify-between border-t border-lightwhite pt-5;
+
+	& > span {
+		@apply text-base font-medium
+		transition-all delay-300 hover:text-gray-500;
+	}
+}

@@ -1,0 +1,8 @@
+.banner {
+	// background-image: url('../../img/banner/bannerBg.jpg');
+	//
+	@apply flex-grow h-28 object-cover bg-cover bg-center bg-[url('../../../img/banner/sale-banner.png')]
+    2xl:h-20
+    lg:h-11
+    sm:h-96;
+}

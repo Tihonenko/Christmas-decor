@@ -1,0 +1,19 @@
+.shop_item {
+	@apply flex w-full flex-col items-center;
+
+	@media (min-width: 534px) {
+		width: calc((100% / 2) - 25px);
+	}
+
+	@media (min-width: 1024px) {
+		width: calc((100% / 4) - 25px);
+	}
+
+	&_link {
+		@apply a-hover text-center text-base font-medium leading-7;
+	}
+
+	&_description {
+		@apply flex flex-col items-center gap-1 pb-2;
+	}
+}

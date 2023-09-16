@@ -1,0 +1,11 @@
+.card__container {
+	@apply flex flex-col  border pt-8 px-2 pb-20 items-center md:w-full;
+
+	& > span {
+		@apply text-lightred text-base mb-5 text-center;
+	}
+
+	& > p {
+		@apply inline-block text-center;
+	}
+}

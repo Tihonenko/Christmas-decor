@@ -1,0 +1,29 @@
+{
+	"plugins": [
+		"@trivago/prettier-plugin-sort-imports",
+		"./node_modules/prettier-plugin-alias-imports"
+	],
+	"trailingComma": "none",
+	"tabWidth": 2,
+	"useTabs": true,
+	"singleQuote": false,
+	"semi": true,
+	"arrowParens": "avoid",
+	"importOrder": [
+		"<THIRD_PARTY_MODULES>",
+		"^/components/(.*)$",
+		"^/UI/(.*)$",
+		"^/providers/(.*)$",
+		"^/shared/(.*)$",
+		"^/assets/(.*)$",
+		"^/config/(.*)$",
+		"^/store/(.*)$",
+		"^/hooks/(.*)$",
+		"^/utils/(.*)$",
+		"^/api/(.*)$",
+		"^../(.*)$",
+		"^./(.*)$"
+	],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true
+}

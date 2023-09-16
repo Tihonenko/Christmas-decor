@@ -1,0 +1,9 @@
+.MyInput {
+	@apply h-[55px] max-w-[500px] border border-gray-400
+    bg-white px-4
+    py-2 outline-none transition-all delay-100
+    
+    ease-in placeholder:text-gray-400
+    focus:border focus:border-lightblack focus:text-lightblack focus:placeholder:opacity-0
+    focus:placeholder:transition-all;
+}

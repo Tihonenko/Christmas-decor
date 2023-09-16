@@ -1,0 +1,8 @@
+.read__more {
+    @apply opacity-70 text-[16px] cursor-pointer
+    lg:text-[12px]
+    hover:opacity-100 hover:gap-2
+    transition-all ease-in-out delay
+        
+
+}

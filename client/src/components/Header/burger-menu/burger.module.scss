@@ -1,0 +1,22 @@
+.burger_menu {
+	@apply lg:hidden;
+}
+
+.burger_menu {
+	@apply mt-[5px] flex w-full flex-col  gap-10;
+
+	&_head {
+		@apply flex justify-between;
+	}
+	&_list {
+		@apply flex flex-wrap gap-y-25px;
+
+		& > div {
+			@apply w-1/2;
+		}
+
+		& > div > h3 {
+			@apply border-b border-lightblack pb-1 text-[36px] font-bold;
+		}
+	}
+}

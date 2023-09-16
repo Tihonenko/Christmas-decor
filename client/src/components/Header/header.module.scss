@@ -1,0 +1,41 @@
+.header {
+	@apply container mt-10;
+}
+
+.nav {
+	@apply flex w-full justify-between  border-t  border-lightblack;
+
+	&_help {
+		@apply w-full font-Sofia font-bold sxl:w-1/2;
+
+		&_title {
+			@apply flex justify-between border-b border-lightblack py-[5px];
+
+			& > li {
+				@apply w-1/2 sxl:w-1/4;
+			}
+		}
+
+		&_menu {
+			@apply mt-[5px] flex justify-between;
+
+			& > ul {
+				@apply flex w-1/2 flex-col sxl:w-1/4;
+			}
+		}
+	}
+}
+
+.nav__container {
+	@apply fixed top-0 flex items-center justify-between;
+}
+
+.menu {
+	@apply cursor-pointer 
+    
+    transition-all delay-300 ease-in;
+}
+
+.menu_active {
+	@apply opacity-0;
+}

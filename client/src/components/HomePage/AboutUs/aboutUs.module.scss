@@ -1,0 +1,49 @@
+.content {
+	@apply flex flex-col;
+
+	&_top {
+		@apply flex items-center justify-center gap-x-6  lg:justify-between lg:gap-x-1;
+
+		&_second {
+			&_first {
+				@apply mr-28;
+			}
+
+			&_second {
+				@apply ml-28;
+			}
+		}
+	}
+
+	&_center {
+		@apply flex items-start justify-center gap-x-10 lg:justify-between lg:gap-x-1;
+
+		&_second {
+			@apply mt-10;
+
+			& > h2 {
+				@apply ml-24;
+			}
+		}
+	}
+
+	&_sub_title {
+		@apply flex justify-center;
+	}
+
+	&_bottom {
+		@apply flex justify-center;
+	}
+}
+
+.main_title {
+	@apply font-Felidae text-4xl sm:text-5xl 2smd:text-7xl md:text-8xl lg:text-9xl  xl:text-sbig;
+
+	@media (min-width: 1420px) {
+		@apply text-[185px];
+	}
+}
+
+.second_title {
+	@apply text-base text-sm 2smd:text-2xl md:text-2xl 2lg:text-3xl xl:text-[42px];
+}

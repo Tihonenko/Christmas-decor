@@ -1,0 +1,15 @@
+.list_item {
+	@apply font-normal;
+
+	& > span {
+		@apply -translate-x-10  opacity-0 transition-all duration-[250];
+	}
+
+	&:hover {
+		@apply text-lightred transition-all;
+
+		& > span {
+			@apply translate-x-0 opacity-100;
+		}
+	}
+}

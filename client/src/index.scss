@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "rembank";
+	src: url("./fonts/Rembank.otf") format("opentype"),
+		url("./fonts/Rembank.woff") format("woff"),
+		url("./fonts/Rembank.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Felidae";
+	src: url("./fonts/Felidae.woff2") format("woff2"),
+		url("./fonts/Felidae.woff") format("woff");
+}
+
+@layer base {
+	body {
+		font-family: "Sofia Sans";
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		@apply bg-lightwhite text-lightblack;
+	}
+}
+
+@layer components {
+	.container {
+		@apply max-w-[1472px];
+	}
+
+	.middle__content {
+		@apply min-h-full flex-auto;
+	}
+
+	.corusel__content {
+		@apply flex snap-x flex-nowrap gap-5 overflow-x-scroll  scroll-smooth;
+	}
+
+	.containerCorusel {
+		@apply mx-auto  w-full max-w-[1110px] px-5;
+	}
+
+	.a-hover {
+		@apply relative;
+		&:hover,
+		&:focus {
+			@apply text-lightred outline-none;
+
+			&:after {
+				content: "";
+
+				@apply absolute left-0 -bottom-[3px] h-[1px] w-full bg-lightred;
+			}
+		}
+	}
+}
+
+#root {
+	height: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+
+	&::-webkit-scrollbar {
+		width: 5px;
+		border-radius: 20px;
+
+		&-thumb {
+			background-color: #8e8e8e;
+			border-radius: 5px;
+		}
+	}
+}
+
+.scroll {
+	&::-webkit-scrollbar {
+		width: 5px;
+		border-radius: 20px;
+
+		&-thumb {
+			background-color: none;
+			border-radius: 5px;
+		}
+	}
+}
